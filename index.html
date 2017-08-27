@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </head>
+<body>
+<a-scene>
+	<a-plane src="play.png" position="0 0 0" rotation="90 90 90" material="side:double" width="100" height="100"></a-plane>
+	
+	<a-sphere radius="1" src="ball.jpeg" position="0 0 0">
+		<a-animation attribute="position"
+			dur=3000
+			from="-7.605 0.698 -1.79"
+			to="-20.2 1.55 1.757">
+	</a-animation>
+	<a-animation attribute="position"
+			delay=3000
+			dur=3000
+			from="-20.2 1.55 1.757"
+			to="-14.9 4.9 12.95">
+	</a-animation></a-sphere>
+	<a-plane src="aud.jpeg" position="-1.53 17.56 50.64" rotation="0 0 0" material="side:double" width="110" height="50"></a-plane>
+	<a-plane src="aud.jpeg" position="-57.6 19.16 -1.68" rotation="0 90 0" material="side:double" width="110" height="50"></a-plane>
+	<a-plane src="aud.jpeg" position="0.437 17.11 -51.9" rotation="0 0 0" material="side:double" width="110" height="50"></a-plane>
+	<a-plane src="aud.jpeg" position="57.38 20.38 -0.74" rotation="0 90 0" material="side:double" width="110" height="50"></a-plane>
+	<a-sphere color="#FDEBDO" position="-6.59 3.442 -3.90" radius="0.6"></a-sphere>
+	<a-sphere color="#FDEBDO" position="-22.6 4.635 0.236" radius="0.6"></a-sphere>
+	
+	<a-box position="-6.72 1.964 -3.95" width="2" height="2" depth="2" color="red"></a-box>
+	<a-box position="-22.7 3.087 0.164" width="2" height="2" depth="2" color="blue"></a-box>
+	
+	<a-cylinder position="-7.10 0.421 -3.92" color="#FDEBDO" radius="0.2" height="1"></a-cylinder>
+	 	<a-cylinder position="-6.16 0.480 -4" color="#FDEBDO" radius="0.2" height="1"></a-cylinder>
+	<a-cylinder position="-23.4 1.644 0.116" color="#FDEBDO" radius="0.2" height="1"></a-cylinder>
+	 	<a-cylinder position="-22.1 1.55 0.067" color="#FDEBDO" radius="0.2" height="1"></a-cylinder>
+
+	<a-camera position="-14.9 3.928 12.95" rotation="0 0 0"></a-camera>
+	<a-text value="MONTH OF WEB VR" color="#7D3C98" text="width:70">
+		<a-animation attribute="position"
+			delay=6000
+			dur=3000
+			from="-18.3 -2.39 4.452"
+			to="-18.3 1.622 4.452">
+		</a-animation></a-text>
+	<a-entity gltf-model="#tree" scale="0.01 0.01 0.01"></a-entity>
+	<a-sky color="#00FFFF"></a-sky>
+</a-scene>
+</body>
+</html>
